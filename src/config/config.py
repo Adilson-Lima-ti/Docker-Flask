@@ -4,7 +4,7 @@ from sqlalchemy.orm import sessionmaker
 class DBConnection:
 
     def __init__(self) -> None:
-        self.__connection_string = 'mysql+pymyqls://root:123456789@mysqldb/teste'
+        self.__connection_string = 'mysql+pymysql://root:123456789@mysqldb/teste'
         self.session = None
 
     def __enter__(self):
